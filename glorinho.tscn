@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://rkahna835u40"]
+
+[node name="Glorinho" type="CharacterBody2D" unique_id=472496100]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=829048991]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2141777015]
