@@ -2,19 +2,37 @@
 
 [ext_resource type="Script" uid="uid://djrcgd1hnuidb" path="res://glorinho/glorinho.gd" id="1_nru4x"]
 [ext_resource type="Texture2D" uid="uid://cyd1ribrs3n3q" path="res://assets/glorinho/base-canoa.png" id="2_rsj06"]
+[ext_resource type="Texture2D" uid="uid://03p1ki6tk7uq" path="res://assets/glorinho/festival-milho.png" id="3_4r2xg"]
+[ext_resource type="Texture2D" uid="uid://coxownxvrre1s" path="res://assets/glorinho/festival-acai.png" id="4_fi3f3"]
+[ext_resource type="Texture2D" uid="uid://dd0eue6bthuew" path="res://assets/glorinho/festival-farinha.png" id="5_tlgsq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0npry"]
 size = Vector2(100, 50)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rsj06"]
+size = Vector2(99, 20)
+
 [node name="Glorinho" type="CharacterBody2D" unique_id=472496100 groups=["player"]]
+collision_mask = 4
 script = ExtResource("1_nru4x")
+roupa_padrao = ExtResource("2_rsj06")
+roupa_milho = ExtResource("3_4r2xg")
+roupa_acai = ExtResource("4_fi3f3")
+roupa_farinha = ExtResource("5_tlgsq")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=811216652]
+texture_filter = 1
+texture_repeat = 1
 position = Vector2(0, -24)
 scale = Vector2(0.21349414, 0.21349414)
 texture = ExtResource("2_rsj06")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=829048991 groups=["player"]]
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2141777015 groups=["player"]]
 shape = SubResource("RectangleShape2D_0npry")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1569088389]
+position = Vector2(-0.5, 35)
+shape = SubResource("RectangleShape2D_rsj06")

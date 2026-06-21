@@ -5,16 +5,21 @@ extends Node
 
 var recursos_carregados: Array[Resource] = []
 
+var tempo_spawn_atual: float = 2.0
+var tempo_spawn_minimo: float = 0.4
+var reducao_por_spawn: float = 0.02
+
+var spawn_timer: Timer
+
 func _ready() -> void:
 	carregar_recursos_da_pasta()
 	
-	var timer = Timer.new()
-	timer.wait_time = 1.0
-	timer.autostart = true
+	spawn_timer = Timer.new()
+	spawn_timer.wait_time = tempo_spawn_atual
+	spawn_timer.autostart = true
+	spawn_timer.timeout.connect(_on_timer_timeout)
+	add_child(spawn_timer)
 	
-	timer.timeout.connect(_on_timer_timeout)
-	
-	add_child(timer)
 
 func carregar_recursos_da_pasta() -> void:
 	var dir = DirAccess.open(pasta_objetos)
@@ -48,3 +53,11 @@ func spawnar_item() -> void:
 	
 func _on_timer_timeout():
 	spawnar_item()
+	
+	if tempo_spawn_atual > tempo_spawn_minimo:
+		tempo_spawn_atual -= reducao_por_spawn
+		
+		if tempo_spawn_atual < tempo_spawn_minimo:
+			tempo_spawn_atual = tempo_spawn_minimo
+	
+	spawn_timer.wait_time = tempo_spawn_atual

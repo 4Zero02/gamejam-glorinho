@@ -25,6 +25,7 @@ window/size/viewport_height=720
 window/size/mode=2
 window/size/resizable=false
 window/stretch/mode="viewport"
+window/stretch/aspect="expand"
 
 [global_group]
 
@@ -36,4 +37,5 @@ player="Grupo do jogador"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"

@@ -10,6 +10,8 @@ collision_layer = 2
 script = ExtResource("1_5bye7")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=575335059]
+texture_filter = 1
+texture_repeat = 1
 
 [node name="ColsionShape" type="CollisionShape2D" parent="." unique_id=1689788393]
 shape = SubResource("CircleShape2D_0npry")

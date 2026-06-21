@@ -7,4 +7,5 @@
 script = ExtResource("1_n6rum")
 nome = "Pamonha"
 texture = ExtResource("2_adqat")
+festival_tag = "milho"
 metadata/_custom_type_script = "uid://ccqglqtwvdirh"
