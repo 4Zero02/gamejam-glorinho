@@ -1,5 +1,10 @@
 [gd_scene format=3 uid="uid://dd8fmea6q6i4u"]
 
+[ext_resource type="Texture2D" uid="uid://cllhkyisrd42y" path="res://assets/background.png" id="1_7nk0i"]
+[ext_resource type="Texture2D" uid="uid://cyd1ribrs3n3q" path="res://assets/glorinho/base-canoa.png" id="2_4uwkn"]
+[ext_resource type="Texture2D" uid="uid://bsthabihx0xc5" path="res://assets/ui/custom/REJOGAR.png" id="2_yoxkw"]
+[ext_resource type="Texture2D" uid="uid://c652gpp6ahp8b" path="res://assets/ui/custom/SAIR.png" id="3_64dqw"]
+
 [node name="Menu" type="Control" unique_id=1785785577]
 layout_mode = 3
 anchors_preset = 15
@@ -10,13 +15,29 @@ grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1520563755]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 5.0
+offset_top = 20.0
+offset_right = 1285.0
+offset_bottom = 740.0
+texture = ExtResource("1_7nk0i")
 
-[node name="Button" type="Button" parent="." unique_id=62883979]
+[node name="Button" type="TextureButton" parent="." unique_id=1302795269]
 layout_mode = 0
-offset_left = 593.0
-offset_top = 455.0
-offset_right = 679.0
-offset_bottom = 486.0
-text = "Novo jogo"
+offset_left = 739.0
+offset_top = 281.0
+offset_right = 1119.0
+offset_bottom = 421.0
+texture_normal = ExtResource("2_yoxkw")
+
+[node name="Button2" type="TextureButton" parent="." unique_id=1620459661]
+layout_mode = 0
+offset_left = 739.0
+offset_top = 450.0
+offset_right = 1119.0
+offset_bottom = 590.0
+texture_normal = ExtResource("3_64dqw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1782382348]
+position = Vector2(269, 490.00003)
+scale = Vector2(0.4420196, 0.44230768)
+texture = ExtResource("2_4uwkn")
