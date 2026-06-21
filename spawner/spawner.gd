@@ -1,14 +1,50 @@
 extends Node
 
-var pasta_objetos = "res://recursos/"
-var cena_base: PackedScene
-var lista_objetos: Array[Resource] = []
+@export var pasta_objetos = "res://recursos/"
+@export var cena_base: PackedScene
 
-func carregar_objetos() -> void:
-	pass
+var recursos_carregados: Array[Resource] = []
 
-func selecionar_objeto() -> void:
-	pass
+func _ready() -> void:
+	carregar_recursos_da_pasta()
+	
+	var timer = Timer.new()
+	timer.wait_time = 1.0
+	timer.autostart = true
+	
+	timer.timeout.connect(_on_timer_timeout)
+	
+	add_child(timer)
 
-func spawn_de_objetos() -> void:
-	pass
+func carregar_recursos_da_pasta() -> void:
+	var dir = DirAccess.open(pasta_objetos)
+	if dir:
+		for arquivo in dir.get_files():
+			var nome_limpo = arquivo.trim_suffix(".remap")
+			if nome_limpo.ends_with(".tres"):
+				var caminho_completo = pasta_objetos + nome_limpo
+				var recurso = load(caminho_completo)
+				if recurso:
+					recursos_carregados.append(recurso)
+		print("recursos carregados com sucesso")
+	else:
+		push_error("não foi possivel acessa a pasta: " + pasta_objetos)
+
+func spawnar_item() -> void:
+	if recursos_carregados.is_empty():
+		return
+	
+	var recurso_escolhido = recursos_carregados.pick_random()
+	
+	var novo_item = cena_base.instantiate() as ItemDrop
+	
+	var largura_da_tela = get_viewport().get_visible_rect().size.x
+	var posicao_x_aleatoria = randf_range(50.0,largura_da_tela - 50)
+	novo_item.position = Vector2(posicao_x_aleatoria,-50)
+	
+	add_child(novo_item)
+	
+	novo_item.montar_item(recurso_escolhido)
+	
+func _on_timer_timeout():
+	spawnar_item()

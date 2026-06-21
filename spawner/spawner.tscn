@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://b07i25yk2uymv"]
 
 [ext_resource type="Script" uid="uid://cnb40sw6c21s2" path="res://spawner/spawner.gd" id="1_khvsl"]
+[ext_resource type="PackedScene" uid="uid://b75kx2agpihvf" path="res://spawner/item_drop/item_drop.tscn" id="2_nhote"]
 
 [node name="Spawner" type="Node" unique_id=877080250]
 script = ExtResource("1_khvsl")
+cena_base = ExtResource("2_nhote")

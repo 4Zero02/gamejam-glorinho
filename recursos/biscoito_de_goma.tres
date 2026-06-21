@@ -1,8 +1,10 @@
 [gd_resource type="Resource" script_class="Objetos_bons" format=3 uid="uid://c0ao0tgudwp76"]
 
 [ext_resource type="Script" uid="uid://ccqglqtwvdirh" path="res://recursos/recurso_base.gd" id="1_pj2e1"]
+[ext_resource type="Texture2D" uid="uid://cr5gow60amvr5" path="res://icon.svg" id="2_gy4j7"]
 
 [resource]
 script = ExtResource("1_pj2e1")
 nome = "Biscoito de goma"
+texture = ExtResource("2_gy4j7")
 metadata/_custom_type_script = "uid://ccqglqtwvdirh"

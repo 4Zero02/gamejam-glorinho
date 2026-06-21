@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dgulwova7rrbq"]
+
+[ext_resource type="Script" uid="uid://ckn72crj4tcui" path="res://game_over.gd" id="1_ujwuu"]
+
+[node name="Game_over" type="Control" unique_id=1804706044]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ujwuu")
+
+[node name="Pontuacao_final" type="Label" parent="." unique_id=77892827]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Lista_top5" type="Label" parent="." unique_id=1125362715]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Jogar_novamente" type="Button" parent="." unique_id=910027503]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Menu" type="Button" parent="." unique_id=805989185]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[connection signal="pressed" from="Jogar_novamente" to="." method="_on_jogar_novamente_pressed"]
+[connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]

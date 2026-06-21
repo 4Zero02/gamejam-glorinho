@@ -14,11 +14,21 @@ config/name="Gamejam Glorinho"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameManager="*uid://lp3jyqx5voks"
+
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/size/mode=2
+window/size/resizable=false
+window/stretch/mode="viewport"
+
+[global_group]
+
+player="Grupo do jogador"
 
 [physics]
 
