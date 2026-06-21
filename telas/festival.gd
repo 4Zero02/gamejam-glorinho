@@ -11,7 +11,7 @@ func _ready() -> void:
 func _on_festival_iniciado(nome_festival: String):
 	var texto_bonito = nome_festival.capitalize()
 	
-	text = "FESTIVAL INICIADO\n" + texto_bonito + "COM PONTOS DUPLICADOS"
+	text = "FESTIVAL INICIADO\n" + texto_bonito + " COM PONTOS DUPLICADOS"
 	visible = true
 
 func _on_festival_encerrado():
