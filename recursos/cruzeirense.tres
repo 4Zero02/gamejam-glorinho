@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Objetos_bons" format=3 uid="uid://111grgmkhodr"]
+
+[ext_resource type="Script" uid="uid://ccqglqtwvdirh" path="res://recursos/recurso_base.gd" id="1_x738n"]
+
+[resource]
+script = ExtResource("1_x738n")
+nome = "Cruzeirense"
+metadata/_custom_type_script = "uid://ccqglqtwvdirh"

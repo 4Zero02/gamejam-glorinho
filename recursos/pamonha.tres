@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Objetos_bons" format=3 uid="uid://cokds5csrpc5j"]
+
+[ext_resource type="Script" uid="uid://ccqglqtwvdirh" path="res://recursos/recurso_base.gd" id="1_n6rum"]
+
+[resource]
+script = ExtResource("1_n6rum")
+nome = "Pamonha"
+metadata/_custom_type_script = "uid://ccqglqtwvdirh"
