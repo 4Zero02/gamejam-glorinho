@@ -40,7 +40,7 @@ func mudar_roupa_normalizada(nova_textura: Texture2D):
 	sprite.texture = nova_textura
 	
 	# Faz a mágica de normalizar o tamanho do personagem para 80x80 pixels
-	var tamanho_desejado = Vector2(80.0, 80.0)
+	var tamanho_desejado = Vector2(230.04, 163.371)
 	var tamanho_original = nova_textura.get_size()
 	sprite.scale = tamanho_desejado / tamanho_original
 

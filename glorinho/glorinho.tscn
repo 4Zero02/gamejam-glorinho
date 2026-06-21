@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" uid="uid://djrcgd1hnuidb" path="res://glorinho/glorinho.gd" id="1_nru4x"]
 [ext_resource type="Texture2D" uid="uid://cyd1ribrs3n3q" path="res://assets/glorinho/base-canoa.png" id="2_rsj06"]
-[ext_resource type="Texture2D" uid="uid://03p1ki6tk7uq" path="res://assets/glorinho/festival-milho.png" id="3_4r2xg"]
-[ext_resource type="Texture2D" uid="uid://coxownxvrre1s" path="res://assets/glorinho/festival-acai.png" id="4_fi3f3"]
-[ext_resource type="Texture2D" uid="uid://dd0eue6bthuew" path="res://assets/glorinho/festival-farinha.png" id="5_tlgsq"]
+[ext_resource type="Texture2D" uid="uid://drunk57ksdakp" path="res://assets/glorinho/festival-milho.png" id="3_4r2xg"]
+[ext_resource type="Texture2D" uid="uid://4jujrjse3pf5" path="res://assets/glorinho/festival-acai.png" id="4_fi3f3"]
+[ext_resource type="Texture2D" uid="uid://bjeji4gd1jsup" path="res://assets/glorinho/festival-farinha.png" id="5_tlgsq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0npry"]
 size = Vector2(100, 50)
