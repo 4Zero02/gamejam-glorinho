@@ -24,29 +24,38 @@ offset_bottom = 720.0
 texture = ExtResource("2_ikk2b")
 
 [node name="ButtonGrey" type="Sprite2D" parent="." unique_id=751333315]
-position = Vector2(318, 308)
-scale = Vector2(4.2083335, 4.2083335)
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(326.375, 315)
+scale = Vector2(8.859376, 3.3125002)
 texture = ExtResource("3_cndc6")
 
 [node name="Pontuacao_final" type="Label" parent="." unique_id=77892827]
 layout_mode = 0
-offset_left = 234.0
-offset_top = 263.0
-offset_right = 399.7826
+offset_left = 155.0
+offset_top = 296.0
+offset_right = 320.7826
 offset_bottom = 356.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("4_yge4r")
+theme_override_font_sizes/font_size = 32
 
 [node name="PanelBrownCornersB" type="Sprite2D" parent="." unique_id=570736183]
-position = Vector2(874, 308.00003)
-scale = Vector2(5.1718736, 3.9375005)
+position = Vector2(874, 269.00003)
+scale = Vector2(5.1718736, 5.1562505)
 texture = ExtResource("5_x3dgl")
 
 [node name="Lista_top5" type="Label" parent="." unique_id=1125362715]
 layout_mode = 0
-offset_left = 770.0
-offset_top = 245.0
-offset_right = 973.47833
-offset_bottom = 362.0
+offset_left = 772.0
+offset_top = 160.0
+offset_right = 975.47833
+offset_bottom = 277.0
+theme_override_colors/font_color = Color(0.074869655, 0.35717526, 0.6484687, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_yge4r")
+theme_override_font_sizes/font_size = 24
 horizontal_alignment = 1
 
 [node name="Jogar_novamente" type="TextureButton" parent="." unique_id=1847598186]
