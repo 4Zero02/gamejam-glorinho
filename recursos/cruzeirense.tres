@@ -1,8 +1,10 @@
 [gd_resource type="Resource" script_class="Objetos_bons" format=3 uid="uid://111grgmkhodr"]
 
 [ext_resource type="Script" uid="uid://ccqglqtwvdirh" path="res://recursos/recurso_base.gd" id="1_x738n"]
+[ext_resource type="Texture2D" uid="uid://dknw2t1se67j0" path="res://assets/itens/refri.png" id="2_sh2fy"]
 
 [resource]
 script = ExtResource("1_x738n")
 nome = "Cruzeirense"
+texture = ExtResource("2_sh2fy")
 metadata/_custom_type_script = "uid://ccqglqtwvdirh"

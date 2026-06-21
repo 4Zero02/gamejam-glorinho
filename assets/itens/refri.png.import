@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cem667rv0ffuk"
-path="res://.godot/imported/Sem título - 20 de junho de 2026 às 21.59.03.png-ba99acb600a4ed1f83f51e9cec16ff31.ctex"
+uid="uid://dknw2t1se67j0"
+path="res://.godot/imported/refri.png-84f921c8314f73179beead63eeb42e5a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/Sem título - 20 de junho de 2026 às 21.59.03.png"
-dest_files=["res://.godot/imported/Sem título - 20 de junho de 2026 às 21.59.03.png-ba99acb600a4ed1f83f51e9cec16ff31.ctex"]
+source_file="res://assets/itens/refri.png"
+dest_files=["res://.godot/imported/refri.png-84f921c8314f73179beead63eeb42e5a.ctex"]
 
 [params]
 

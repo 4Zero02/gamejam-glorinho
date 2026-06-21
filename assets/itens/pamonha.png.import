@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dknw2t1se67j0"
-path="res://.godot/imported/Sem título - 20 de junho de 2026 às 23.51.56.png-5a2f118f6fdb8baefbe5c8f25f82953e.ctex"
+uid="uid://df3t7igk5o8j8"
+path="res://.godot/imported/pamonha.png-0c7433d2f0b0e8cc08a1c92d5ed07e84.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/Sem título - 20 de junho de 2026 às 23.51.56.png"
-dest_files=["res://.godot/imported/Sem título - 20 de junho de 2026 às 23.51.56.png-5a2f118f6fdb8baefbe5c8f25f82953e.ctex"]
+source_file="res://assets/itens/pamonha.png"
+dest_files=["res://.godot/imported/pamonha.png-0c7433d2f0b0e8cc08a1c92d5ed07e84.ctex"]
 
 [params]
 

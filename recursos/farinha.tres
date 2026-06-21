@@ -1,8 +1,10 @@
 [gd_resource type="Resource" script_class="Objetos_bons" format=3 uid="uid://e3704vsbtf3f"]
 
 [ext_resource type="Script" uid="uid://ccqglqtwvdirh" path="res://recursos/recurso_base.gd" id="1_rp4r4"]
+[ext_resource type="Texture2D" uid="uid://bhflvvwewh5kr" path="res://assets/itens/farinha.png" id="2_ioc5a"]
 
 [resource]
 script = ExtResource("1_rp4r4")
 nome = "Farinha"
+texture = ExtResource("2_ioc5a")
 metadata/_custom_type_script = "uid://ccqglqtwvdirh"

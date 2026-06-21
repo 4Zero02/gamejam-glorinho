@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://rkahna835u40"]
 
 [ext_resource type="Script" uid="uid://djrcgd1hnuidb" path="res://glorinho/glorinho.gd" id="1_nru4x"]
+[ext_resource type="Texture2D" uid="uid://cyd1ribrs3n3q" path="res://assets/glorinho/base-canoa.png" id="2_rsj06"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0npry"]
 size = Vector2(100, 50)
@@ -9,6 +10,9 @@ size = Vector2(100, 50)
 script = ExtResource("1_nru4x")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=811216652]
+position = Vector2(0, -24)
+scale = Vector2(0.21349414, 0.21349414)
+texture = ExtResource("2_rsj06")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=829048991 groups=["player"]]
 

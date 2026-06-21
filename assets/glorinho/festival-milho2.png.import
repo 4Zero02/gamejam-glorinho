@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0l5q5i6bx7ta"
-path="res://.godot/imported/Sem título - 20 de junho de 2026 às 23.55.19.png-5a75e4ac9a948ddf0d5ff7ac45ed0edc.ctex"
+uid="uid://sc5mbas7adm1"
+path="res://.godot/imported/festival-milho2.png-3fc08c9f3638888da95bd11f92d25a99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/Sem título - 20 de junho de 2026 às 23.55.19.png"
-dest_files=["res://.godot/imported/Sem título - 20 de junho de 2026 às 23.55.19.png-5a75e4ac9a948ddf0d5ff7ac45ed0edc.ctex"]
+source_file="res://assets/glorinho/festival-milho2.png"
+dest_files=["res://.godot/imported/festival-milho2.png-3fc08c9f3638888da95bd11f92d25a99.ctex"]
 
 [params]
 
