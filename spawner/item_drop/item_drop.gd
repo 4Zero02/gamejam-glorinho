@@ -19,6 +19,7 @@ func _process(delta: float) -> void:
 	position.y += velocidade * delta
 	
 	if position.y > get_viewport_rect().size.y + 100:
+		GameManager.registrar_erro()
 		queue_free()
 
 

@@ -1,5 +1,7 @@
 extends Control
 
+@onready var label_top_5 = $Lista_top5
+
 func _ready() -> void:
 	exibir_ranking()
 	$Pontuacao_final.text = "Sua pontuação: " + str(GameManager.pontos_totais)
@@ -11,6 +13,8 @@ func exibir_ranking():
 		var posicao = i + 1
 		var pontos = GameManager.top_pontuacoes[i]
 		texto_ranking += str(posicao) + "° lugar: " + str(pontos) + "pts\n"
+	
+	label_top_5.text = texto_ranking
 
 func _on_jogar_novamente_pressed() -> void:
 	GameManager.resetar_status()

@@ -4,7 +4,7 @@ signal pontuacao_atualizada(novo_valor: int)
 signal erros_atualizados(qunatidade: int)
 
 var pontos_totais: int = 0
-var itens_ruins_coletados = 0
+var erros_cometidos = 0
 var limite_erros = 3
 
 const CAMINHO_SAVE = "user://top_scores.save"
@@ -14,25 +14,22 @@ func _ready() -> void:
 	carregar_top_5()
 
 func adicionar_pontos(valor: int):
-	if valor < 0:
-		registrar_erro()
-	else:
-		pontos_totais += valor
-		pontuacao_atualizada.emit(pontos_totais)
+	pontos_totais += valor
+	pontuacao_atualizada.emit(pontos_totais)
 
 func registrar_erro():
-	itens_ruins_coletados += 1
-	erros_atualizados.emit(itens_ruins_coletados)
+	erros_cometidos += 1
+	erros_atualizados.emit(erros_cometidos)
 	
-	if itens_ruins_coletados >= limite_erros:
+	if erros_cometidos >= limite_erros:
 		chamar_game_over()
 
 func chamar_game_over():
-	get_tree().change_scene_to_file("")
+	get_tree().change_scene_to_file("res://telas/game_over.tscn")
 
 func resetar_status():
 	pontos_totais = 0
-	itens_ruins_coletados = 0
+	erros_cometidos = 0
 
 func verificar_e_atulizar_top_5(nova_pontuacao: int):
 	top_pontuacoes.append(nova_pontuacao)
